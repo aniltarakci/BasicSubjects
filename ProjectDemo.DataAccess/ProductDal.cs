@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 
 namespace ProjectDemo.DataAccess
 {
-    public class EfProductDal : IProductDal
+    public class ProductDal : IProductDal
     {
         List<Product> _products;
-        public EfProductDal()
+        public ProductDal()
         {
             _products = new List<Product>()
             {
@@ -25,9 +25,24 @@ namespace ProjectDemo.DataAccess
             Console.WriteLine("Entity Framework ile eklendi.");
         }
 
+        public void Delete(Product product)
+        {
+            Console.WriteLine("Entity Framework ile silindi.");
+        }
+
         public List<Product> GetAll()
         {
             return _products;
+        }
+
+        public List<Product> GetById(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Update(Product product)
+        {
+            Console.WriteLine("Entity Framework ile güncellendi.");
         }
     }
 }

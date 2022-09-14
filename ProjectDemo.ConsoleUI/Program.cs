@@ -8,7 +8,7 @@ namespace ProjectDemo.ConsoleUI
     {
         static void Main(string[] args)
         {
-            ProductManager productManager = new ProductManager(new EfProductDal());
+            ProductManager productManager = new ProductManager(new ProductDal());
 
             foreach (var product in productManager.GetAll())
             {

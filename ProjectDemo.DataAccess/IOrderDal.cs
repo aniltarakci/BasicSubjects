@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ProjectDemo.DataAccess
 {
-    public interface IProductDal : IEntitiyRepository<Product>
+    public interface IOrderDal : IEntitiyRepository<Order>
     {
 
     }
