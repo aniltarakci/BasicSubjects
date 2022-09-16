@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace ProjectDemo.Entities
 {
-    public class Order : IEntity
+    //İmzalama amaçlı kulllanım
+    public interface IEntity
     {
-        public int Id { get; set; }
     }
 }

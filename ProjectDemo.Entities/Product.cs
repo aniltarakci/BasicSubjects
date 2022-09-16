@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProjectDemo.Entities
 {
-    public class Product
+    public class Product : IEntity
     {
         public int ProductId { get; set; } // Ürün Id
         public string ProductName { get; set; } //Ürün Adı
