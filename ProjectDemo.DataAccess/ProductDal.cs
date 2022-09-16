@@ -14,10 +14,10 @@ namespace ProjectDemo.DataAccess
         {
             _products = new List<Product>()
             {
-                new Product{ProductId = 1, ProductName = "Acer ef Bilgisayar", QuantityPerUnit = "32GB Ram", UnitPrice = 10000, UnitsInStock = 2},
-                new Product{ProductId = 2, ProductName = "Lenovo ef Bilgisayar", QuantityPerUnit = "16GB Ram", UnitPrice = 8000, UnitsInStock = 5},
-                new Product{ProductId = 3, ProductName = "Samsung ef Bilgisayar", QuantityPerUnit = "4GB Ram", UnitPrice = 5000, UnitsInStock = 7},
-                new Product{ProductId = 4, ProductName = "Hp ef Bilgisayar", QuantityPerUnit = "8GB Ram", UnitPrice = 7000, UnitsInStock = 9},
+                new Product{ProductId = 1, ProductName = "Acer Bilgisayar", QuantityPerUnit = "32GB Ram", UnitPrice = 10000, UnitsInStock = 2},
+                new Product{ProductId = 2, ProductName = "Lenovo Bilgisayar", QuantityPerUnit = "16GB Ram", UnitPrice = 8000, UnitsInStock = 5},
+                new Product{ProductId = 3, ProductName = "Samsung Bilgisayar", QuantityPerUnit = "4GB Ram", UnitPrice = 5000, UnitsInStock = 7},
+                new Product{ProductId = 4, ProductName = "Hp Bilgisayar", QuantityPerUnit = "8GB Ram", UnitPrice = 7000, UnitsInStock = 9},
             };
         }
         public void Add(Product product)
