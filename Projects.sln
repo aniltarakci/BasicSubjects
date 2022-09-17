@@ -57,9 +57,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjectDemo.Entities", "Pro
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Generics", "Generics\Generics.csproj", "{A824E982-A880-4FB8-9686-878A2A06103E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExceptionHandling", "ExceptionHandling\ExceptionHandling.csproj", "{C6E9961C-4472-4E4C-AF12-B1E205F2C830}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExceptionHandling", "ExceptionHandling\ExceptionHandling.csproj", "{C6E9961C-4472-4E4C-AF12-B1E205F2C830}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqDemo", "LinqDemo\LinqDemo.csproj", "{4CF3E381-EB6A-4325-8B90-7BF229AD2554}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinqDemo", "LinqDemo\LinqDemo.csproj", "{4CF3E381-EB6A-4325-8B90-7BF229AD2554}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFrameworkDemo", "EntityFrameworkDemo\EntityFrameworkDemo.csproj", "{9CDA9C40-4135-4305-B23A-946977E18E81}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -179,6 +181,10 @@ Global
 		{4CF3E381-EB6A-4325-8B90-7BF229AD2554}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4CF3E381-EB6A-4325-8B90-7BF229AD2554}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4CF3E381-EB6A-4325-8B90-7BF229AD2554}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CDA9C40-4135-4305-B23A-946977E18E81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CDA9C40-4135-4305-B23A-946977E18E81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CDA9C40-4135-4305-B23A-946977E18E81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CDA9C40-4135-4305-B23A-946977E18E81}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

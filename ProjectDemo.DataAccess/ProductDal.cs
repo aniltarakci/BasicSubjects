@@ -9,40 +9,56 @@ namespace ProjectDemo.DataAccess
 {
     public class ProductDal : IProductDal
     {
-        List<Product> _products;
         public ProductDal()
         {
-            _products = new List<Product>()
-            {
-                new Product{ProductId = 1, ProductName = "Acer Bilgisayar", QuantityPerUnit = "32GB Ram", UnitPrice = 10000, UnitsInStock = 2},
-                new Product{ProductId = 2, ProductName = "Lenovo Bilgisayar", QuantityPerUnit = "16GB Ram", UnitPrice = 8000, UnitsInStock = 5},
-                new Product{ProductId = 3, ProductName = "Samsung Bilgisayar", QuantityPerUnit = "4GB Ram", UnitPrice = 5000, UnitsInStock = 7},
-                new Product{ProductId = 4, ProductName = "Hp Bilgisayar", QuantityPerUnit = "8GB Ram", UnitPrice = 7000, UnitsInStock = 9},
-            };
+
         }
         public void Add(Product product)
         {
-            Console.WriteLine("Entity Framework ile eklendi.");
+            using (NorthwindContext northwindContext = new NorthwindContext())
+            {
+                northwindContext.Products.Add(product);
+                northwindContext.SaveChanges();
+            }
         }
 
         public void Delete(Product product)
         {
-            Console.WriteLine("Entity Framework ile silindi.");
+            using (NorthwindContext northwindContext = new NorthwindContext())
+            {
+                northwindContext.Products.Remove(northwindContext.Products.SingleOrDefault(p => p.ProductId == product.ProductId));
+                northwindContext.SaveChanges();
+            }
         }
 
         public List<Product> GetAll()
         {
-            return _products;
+            using (NorthwindContext northwindContext = new NorthwindContext())
+            {
+                return northwindContext.Products.ToList();
+            }
         }
 
-        public List<Product> GetById(int id)
+        public Product GetById(int id)
         {
-            throw new NotImplementedException();
+            using (NorthwindContext northwindContext = new NorthwindContext())
+            {
+                return northwindContext.Products.SingleOrDefault(p => p.ProductId == id);
+            }
         }
 
         public void Update(Product product)
         {
-            Console.WriteLine("Entity Framework ile güncellendi.");
+            using (NorthwindContext northwindContext = new NorthwindContext())
+            {
+                var productToUpdate = northwindContext.Products.SingleOrDefault(p => p.ProductId == product.ProductId);
+                productToUpdate.ProductName = product.ProductName;
+                productToUpdate.QuantityPerUnit = product.QuantityPerUnit;
+                productToUpdate.UnitPrice = product.UnitPrice;
+                productToUpdate.UnitsInStock = product.UnitsInStock;
+                productToUpdate.CategoryId = product.CategoryId;
+                northwindContext.SaveChanges();
+            }
         }
     }
 }

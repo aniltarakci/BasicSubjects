@@ -25,9 +25,24 @@ namespace ProjectDemo.Business
             _productDal.Add(product);
         }
 
+        public void Delete(Product product)
+        {
+            _productDal.Delete(product);
+        }
+
+        public Product GetById(int id)
+        {
+            return _productDal.GetById(id);
+        }
+
         public List<Product> GetAll()
         {
             return _productDal.GetAll();
+        }
+
+        public void Update(Product product)
+        {
+            _productDal.Update(product);
         }
     }
 }

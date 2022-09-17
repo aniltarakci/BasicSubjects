@@ -10,7 +10,7 @@ namespace ProjectDemo.DataAccess
     public interface IEntitiyRepository<T> where T : class, IEntity, new()
     {
         List<T> GetAll();
-        List<T> GetById(int id);
+        T GetById(int id);
         public void Add(T entitiy);
         public void Update(T entitiy);
         public void Delete(T entitiy);

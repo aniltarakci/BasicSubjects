@@ -10,6 +10,9 @@ namespace ProjectDemo.Business
     public interface IProductService
     {
         List<Product> GetAll();
+        Product GetById(int id);
         public void Add(Product product);
+        public void Delete(Product product);
+        public void Update(Product product);
     }
 }
