@@ -44,5 +44,10 @@ namespace ProjectDemo.Business
         {
             _productDal.Update(product);
         }
+
+        public Task<List<Product>> GetAllAsync()
+        {
+            return _productDal.GetAllAsync();
+        }
     }
 }

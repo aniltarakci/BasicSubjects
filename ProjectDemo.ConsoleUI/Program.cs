@@ -38,6 +38,13 @@ namespace ProjectDemo.ConsoleUI
             //{
             //    Console.WriteLine(exception.Message);
             //}
+
+            //ProductManager productManager = new ProductManager(new ProductDal());
+
+            //foreach (var product in productManager.GetAllAsync().Result)
+            //{
+            //    Console.WriteLine(product.ProductName);
+            //}
         }
     }
 }

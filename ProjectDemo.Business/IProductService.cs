@@ -14,5 +14,6 @@ namespace ProjectDemo.Business
         public void Add(Product product);
         public void Delete(Product product);
         public void Update(Product product);
+        Task<List<Product>> GetAllAsync();
     }
 }
