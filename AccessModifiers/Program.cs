@@ -13,7 +13,7 @@ namespace AccessModifiers
             //Public = Genel/tüm .cs dosyalarında kullanılabilir.
             //Internal = Sadece ilgili namespace alanında kullanılabilir.
             //Private = Sadece ilgili class'ta kullanılabilir.
-            //Protected = Sadece ilgili class'ta ve inheritance eden class'ta kullanilabilir.
+            //Protected = Sadece ilgili class'ta ve inheritance eden class'ta kullanilabilir....
         }
     }
 
