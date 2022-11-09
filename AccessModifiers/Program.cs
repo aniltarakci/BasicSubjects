@@ -17,7 +17,7 @@ namespace AccessModifiers
         }
     }
 
-    internal class Customer //Class'ların default'u "internal"dır.
+    internal class Customer //Class'ların default'u "internal"dır..
     {
         int Id { get; set; } //Erişim belirtilmediği taktirde "Private"tır.
     }
